@@ -4,6 +4,7 @@ export default function NavBar() {
   return (
     <>
       <h1>An ba to com</h1>
+      <h1>Hello Nigga</h1>
       <nav>
         <ul>
           <li>
