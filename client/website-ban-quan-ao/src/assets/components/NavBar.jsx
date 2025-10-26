@@ -3,6 +3,7 @@ import "./NavBar.css";
 export default function NavBar() {
   return (
     <>
+      <h1>An ba to com</h1>
       <nav>
         <ul>
           <li>
