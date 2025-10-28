@@ -3,6 +3,7 @@ import "./Category.css";
 export default function Category() {
   return (
     <>
+    <h1>hello </h1>
       <section className="category">
         <div className="category-track1">
           <div>
