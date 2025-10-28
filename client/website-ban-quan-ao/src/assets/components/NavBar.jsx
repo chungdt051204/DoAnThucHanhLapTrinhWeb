@@ -1,33 +1,45 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import logo from "./logo.png";
 export default function NavBar() {
   return (
     <>
-      <h1>An ba to com</h1>
-      <h1>Hello Nigga</h1>
       <nav>
         <ul>
           <li>
-            <Link to="/">Logo</Link>
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="/">
+              <p>HOME</p>
+            </Link>
           </li>
           <li>
-            <Link to="/">HOME</Link>
+            <Link>
+              <p>WOMEN'S</p>
+            </Link>
           </li>
           <li>
-            <Link>WOMEN'S</Link>
+            <Link>
+              <p>MEN'S</p>
+            </Link>
           </li>
           <li>
-            <Link>MEN'S</Link>
+            <Link>
+              <p>SHOP</p>
+            </Link>
           </li>
           <li>
-            <Link>SHOP</Link>
+            <Link>
+              <p>PAGES</p>
+            </Link>
           </li>
-          <li>
-            <Link>PAGES</Link>
-          </li>
-          <li>
-            <button>Login</button>
-          </li>
+        </ul>
+        <ul>
           <li>
             <Link>
               <div>
@@ -36,10 +48,19 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link>Icon Trái tim</Link>
+            <Link to="/login">
+              <p>LOGIN</p>
+            </Link>
           </li>
           <li>
-            <Link>Icon Giỏ hàng</Link>
+            <Link>
+              <i className="fa-regular fa-heart"></i>
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <i className="fa-solid fa-cart-shopping"></i>
+            </Link>
           </li>
         </ul>
       </nav>

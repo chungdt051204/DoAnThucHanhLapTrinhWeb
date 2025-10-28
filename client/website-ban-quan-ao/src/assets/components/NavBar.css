@@ -1,7 +1,44 @@
+nav {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+}
 nav > ul {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+nav > ul:first-of-type {
+  width: 20%;
+}
+nav > ul:nth-of-type(2) {
+  width: 40%;
+  justify-content: space-around;
+}
+ul:nth-of-type(2) > li {
+  transition: 0.3s;
+}
+ul:nth-of-type(2) > li:hover {
+  transform: scale(1.2);
+  text-decoration: underline brown;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: 0.3s;
+}
+nav > ul:last-of-type {
+  width: 40%;
+  justify-content: end;
+  gap: 20px;
 }
 ul > li {
   list-style-type: none;
+}
+li > a {
+  text-decoration: none;
+}
+li > a > p {
+  color: rgb(30, 30, 30);
+}
+li > a > i {
+  font-size: 18px;
+  color: black;
 }
