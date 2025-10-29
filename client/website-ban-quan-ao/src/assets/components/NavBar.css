@@ -9,6 +9,7 @@ nav > ul {
 }
 nav > ul:first-of-type {
   width: 20%;
+  padding-right: 200px;
 }
 nav > ul:nth-of-type(2) {
   width: 40%;

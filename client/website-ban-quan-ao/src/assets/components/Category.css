@@ -1,4 +1,5 @@
 .category {
+  margin-top: 25px;
   width: 100%;
   height: 500px;
   display: flex;
@@ -7,8 +8,10 @@
 .category > .category-track1 {
   width: 50%;
   height: 100%;
+  margin-left: 15px;
   background-image: url(../category-1.jpg);
   background-size: cover;
+  align-items: center;
 }
 .category > .category-track2 {
   width: 48%;
@@ -35,4 +38,40 @@
 }
 .category-track2 > .item4 {
   background-image: url(../category-5.jpg);
+}
+.category .shop {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.category .shop:hover {
+  transform: scale(1.2);
+  color:brown;
+  text-decoration: underline brown;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: 0.3s;
+}
+.category > .category-track1 > .ct1{
+  width: 420px;
+  padding-left: 50px;
+  margin-top: 170px;
+}
+.category > .category-track2 > .item1 > .ct2{
+  padding-left: 25px;
+  margin-top: 65px;
+}
+.category > .category-track2 > .item2> .ct3{
+  padding-left: 25px;
+  margin-top: 65px;
+}
+.category > .category-track2 > .item3> .ct4{
+  padding-left: 25px;
+  margin-top: 65px;
+}
+.category > .category-track2 > .item4> .ct5{
+  padding-left: 25px;
+  margin-top: 65px;
 }
