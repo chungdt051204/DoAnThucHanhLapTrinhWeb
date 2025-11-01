@@ -1,7 +1,25 @@
+import { useContext } from "react";
+import AppContext from "./AppContext";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import logo from "./logo.png";
 export default function NavBar() {
+  const { isLogin, setIsLogin } = useContext(AppContext);
+  const handleLogout = () => {
+    setIsLogin(false);
+    fetch("http://localhost:3000/server/logout.php", {
+      method: "DELETE",
+      credentials: "include",
+    })
+      .then((res) => {
+        if (res.ok) return res.json();
+        throw res;
+      })
+      .then(({ message }) => {
+        alert(message);
+      })
+      .catch();
+  };
   return (
     <>
       <nav>
@@ -48,9 +66,15 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="/login">
-              <p>LOGIN</p>
-            </Link>
+            {isLogin ? (
+              <Link>
+                <p onClick={handleLogout}>LOGOUT</p>
+              </Link>
+            ) : (
+              <Link to="/login">
+                <p>LOGIN</p>
+              </Link>
+            )}
           </li>
           <li>
             <Link>

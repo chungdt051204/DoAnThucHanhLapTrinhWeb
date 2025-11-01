@@ -22,7 +22,6 @@
 }
 .category-track2 > .category-item {
   width: 48%;
-  height: 50%;
   background-position: center;
   background-size: cover; /* thay contain bằng cover */
   background-repeat: no-repeat;
@@ -48,30 +47,30 @@
 
 .category .shop:hover {
   transform: scale(1.2);
-  color:brown;
+  color: brown;
   text-decoration: underline brown;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
   transition: 0.3s;
 }
-.category > .category-track1 > .ct1{
+.category > .category-track1 > .ct1 {
   width: 420px;
   padding-left: 50px;
   margin-top: 170px;
 }
-.category > .category-track2 > .item1 > .ct2{
+.category > .category-track2 > .item1 > .ct2 {
   padding-left: 25px;
   margin-top: 65px;
 }
-.category > .category-track2 > .item2> .ct3{
+.category > .category-track2 > .item2 > .ct3 {
   padding-left: 25px;
   margin-top: 65px;
 }
-.category > .category-track2 > .item3> .ct4{
+.category > .category-track2 > .item3 > .ct4 {
   padding-left: 25px;
   margin-top: 65px;
 }
-.category > .category-track2 > .item4> .ct5{
+.category > .category-track2 > .item4 > .ct5 {
   padding-left: 25px;
   margin-top: 65px;
 }

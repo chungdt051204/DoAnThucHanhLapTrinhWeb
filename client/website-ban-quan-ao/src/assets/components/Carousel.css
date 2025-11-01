@@ -1,0 +1,15 @@
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+}
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.carousel-track > .carousel-items > img {
+  width: 1000px;
+  height: 500px;
+}
